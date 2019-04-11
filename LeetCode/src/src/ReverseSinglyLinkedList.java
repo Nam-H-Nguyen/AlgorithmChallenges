@@ -15,13 +15,18 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
+public class ReverseSinglyLinkedList {
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
 
     public ListNode reverseList(ListNode head) {
-        if (head == null) {return null;}
+
+        if (head == null) {
+            return null;
+        }
 
         /* iterative solution */
         ListNode newHead = null;
@@ -33,4 +38,5 @@ public class ListNode {
         }
         return newHead;
     }
+    
 }
